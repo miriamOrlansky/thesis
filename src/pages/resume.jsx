@@ -85,7 +85,8 @@ export default function Resume(){
             <Paragraph>
                 <div>Masters of Web & Multimedia Design ∙ Touro University – 2023</div>
                 <div>Bachelors of Liberal Arts ∙ Thomas Edison State University - 2021</div>
-            </Paragraph></Group>
+            </Paragraph>
+            </Group>
         </Root>
     )
 };
