@@ -13,6 +13,7 @@ font-family: "garamond-premier-pro-display", serif;
 font-weight: 600;
 font-style: normal;
 font-size: 1.3rem;
+
 `;
 
 export const NavLink = styled(Link)`
@@ -21,10 +22,15 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 2rem;
+border-bottom: 1px solid #000
+padding-bottom: 10px;
 height: 100%;
 cursor: pointer;
 &.active {
 	text-decoration: underline;
+	text-underline-offset: 10px;
+	text-decoration-thickness: 3px;
+	text-decoration-color: ${colors.black};
 }
 `;
 
