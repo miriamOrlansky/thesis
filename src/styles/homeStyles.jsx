@@ -12,6 +12,7 @@ display: flex;
 flex-direction: column;
 gap: 20%;
 margin-top: 70px;
+color: ${colors.black};
 `;
 
 export const SectionOne = styled.div`

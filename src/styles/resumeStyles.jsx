@@ -7,7 +7,7 @@ padding: 0.3rem calc((100vw - 90vw) / 2);
 display: flex;
 flex-direction: column; 
 gap: 10px;
-max-width: 1050px;
+max-width: 750px;
 margin: 0 auto;
 padding-bottom: 100px;
 font-weight: 500;
