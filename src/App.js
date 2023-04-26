@@ -17,7 +17,7 @@ return (
 	            <Nav>
 					<NavMenu>
            
-                  <NavLink to="/" onClick={() => changeColor("#F1F1F1")}>
+                  <NavLink to="/" onClick={() => changeColor("#F5E7E1")}>
                     Work
                   </NavLink>
                

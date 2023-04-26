@@ -43,7 +43,7 @@ export default function Resume(){
                 </div>
                 <div>
                     <SubTitle>
-                    UI Engineer ∙ Madison Title Agency – Lakewood, NJ Aug 2022-Present
+                    UI Engineer ∙ Madison Title Agency – Lakewood, NJ Aug 2022  -  April 2023
                     </SubTitle>
                     <ul>
                         <li>Used Figma to design and prototype new interfaces and update existing interfaces for internal applications to allow for more efficient workflow within the company. This included a new interface for a client phonebook, and a duplicate matching and merging interface to filter out pre-existing contacts within the phonebook.</li>

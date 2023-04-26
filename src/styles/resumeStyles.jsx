@@ -10,6 +10,7 @@ gap: 10px;
 max-width: 1050px;
 margin: 0 auto;
 padding-bottom: 100px;
+font-weight: 500;
 `;
 export const Header = styled.div`
 display: flex; 
