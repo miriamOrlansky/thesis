@@ -17,7 +17,7 @@ font-size: 1.3rem;
 `;
 
 export const NavLink = styled(Link)`
-color: ${colors.black};
+color: ${props => props.TheColor};
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -30,7 +30,7 @@ cursor: pointer;
 	text-decoration: underline;
 	text-underline-offset: 10px;
 	text-decoration-thickness: 3px;
-	text-decoration-color: ${colors.black};
+	text-decoration-color: ${props => props.TheColor};
 }
 `;
 

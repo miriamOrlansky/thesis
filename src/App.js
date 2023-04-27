@@ -10,33 +10,34 @@ import { useState } from 'react';
 
 function App() {
 const [color, changeColor] = useState("#F1F1F1");
+const [textColor, setTextColor] = useState("#2D343B")
 document.body.style.backgroundColor = color;
+
 
 return (
 	<Router>
-	            <Nav>
-					<NavMenu>
-           
-                  <NavLink to="/" onClick={() => changeColor("#F5E7E1")}>
-                    Work
-                  </NavLink>
-               
-                  <NavLink
-                    to="/play"
-                    onClick={() => changeColor("#2D343B")}
-                  >
-                    Play
-                  </NavLink>
+	  <Nav >
+			<NavMenu>
+        <NavLink to="/" TheColor={textColor} onClick={() => { changeColor("#F5E7E1"); setTextColor("#2D343B")}}>
+          Work
+        </NavLink>
+        <NavLink
+          to="/play"
+          TheColor={textColor}
+          onClick={() => { changeColor("#2D343B"); setTextColor("#f1f1f1")}}
+        >
+          Play
+        </NavLink>
+        <NavLink
+          to="/resume"
+          TheColor={textColor}
+          onClick={() => { changeColor("#F5E7E1"); setTextColor("#2D343B")}}
+        >
+          Resume
+        </NavLink>
                 
-                  <NavLink
-                    to="/resume"
-                    onClick={() => changeColor("#F5E7E1")}
-                  >
-                    Resume
-                  </NavLink>
-                
-              </NavMenu>
-            </Nav>
+      </NavMenu>
+    </Nav>
 	
 	<Routes>
 		<Route exact path='/' element={<Home />}  />
