@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavLink, NavMenu } 
+import {Root, Nav, NavLink, NavMenu } 
     from "./components/NavbarElements";
 import { BrowserRouter as Router, Routes, Route}
 	from 'react-router-dom';
@@ -9,28 +9,31 @@ import Resume from './pages/resume';
 import { useState } from 'react';
 
 function App() {
-const [color, changeColor] = useState("#F1F1F1");
+const [color, setColor] = useState("#F1F1F1");
+
+
 const [textColor, setTextColor] = useState("#2D343B")
-document.body.style.backgroundColor = color;
+
 
 
 return (
+  <Root backColor={color}>
 	<Router>
 	  <Nav>
-        <NavLink to="/" TheColor={textColor} onClick={() => { changeColor("#F5E7E1"); setTextColor("#2D343B")}}>
+        <NavLink to="/" TheColor={textColor} onClick={() => { setColor("#F5E7E1"); setTextColor("#2D343B")}}>
           Work
         </NavLink>
         <NavLink
           to="/play"
           TheColor={textColor}
-          onClick={() => { changeColor("#2D343B"); setTextColor("#f1f1f1")}}
+          onClick={() => { setColor("#2D343B"); setTextColor("#f1f1f1")}}
         >
           Play
         </NavLink>
         <NavLink
           to="/resume"
           TheColor={textColor}
-          onClick={() => { changeColor("#F5E7E1"); setTextColor("#2D343B")}}
+          onClick={() => { setColor("#F5E7E1"); setTextColor("#2D343B")}}
         >
           Resume
         </NavLink>
@@ -41,7 +44,7 @@ return (
 		<Route path='/play' element={<Play/>} />
 		<Route path='/resume' element={<Resume/>} />
 	</Routes>
-	</Router>
+	</Router></Root>
 );
 }
 

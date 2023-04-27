@@ -2,7 +2,10 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 import {colors} from "../styles/colors";
+export const Root = styled.div`
+background-color: ${props => props.backColor};
 
+`;
 export const Nav = styled.nav`
 display: flex;
 font-size: 0.8rem;
