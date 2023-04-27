@@ -4,15 +4,19 @@ import styled from "styled-components";
 import {colors} from "../styles/colors";
 
 export const Nav = styled.nav`
-height: 85px;
 display: flex;
-justify-content: flex-end;
-padding: 0.3rem calc((100vw - 90vw) / 2);
+font-size: 0.8rem;
 z-index: 12;
 font-family: "garamond-premier-pro-display", serif;
 font-weight: 600;
 font-style: normal;
-font-size: 1.3rem;
+justify-content: center;
+height: 85px;
+	@media (min-width: 426px){
+	justify-content: flex-end;
+	padding: 0.3rem calc((100vw - 90vw) / 2);
+	font-size: 1.3rem;
+	}
 
 `;
 
@@ -21,7 +25,7 @@ color: ${props => props.TheColor};
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 2rem;
+padding: 0 1.3rem;
 border-bottom: 1px solid #000
 padding-bottom: 10px;
 height: 100%;
@@ -31,6 +35,9 @@ cursor: pointer;
 	text-underline-offset: 10px;
 	text-decoration-thickness: 3px;
 	text-decoration-color: ${props => props.TheColor};
+}
+@media (min-width: 426px){
+	padding: 0 2 rem;
 }
 `;
 
@@ -48,16 +55,4 @@ color: #808080;
 }
 `;
 
-export const NavMenu = styled.div`
-display: flex;
-align-items: center;
-margin-right: -24px;
-/* Second Nav */
-/* margin-right: 24px; */
-/* Third Nav */
-/* width: 100vw;
-white-space: nowrap; */
-@media screen and (max-width: 768px) {
-	display: none;
-}
-`;
+

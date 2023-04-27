@@ -16,8 +16,7 @@ document.body.style.backgroundColor = color;
 
 return (
 	<Router>
-	  <Nav >
-			<NavMenu>
+	  <Nav>
         <NavLink to="/" TheColor={textColor} onClick={() => { changeColor("#F5E7E1"); setTextColor("#2D343B")}}>
           Work
         </NavLink>
@@ -35,8 +34,6 @@ return (
         >
           Resume
         </NavLink>
-                
-      </NavMenu>
     </Nav>
 	
 	<Routes>
