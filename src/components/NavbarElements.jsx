@@ -29,7 +29,6 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1.3rem;
-border-bottom: 1px solid #000
 padding-bottom: 10px;
 height: 100%;
 cursor: pointer;
