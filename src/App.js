@@ -1,11 +1,16 @@
 import React from 'react';
-import {Root, Nav, NavLink, NavMenu } 
+import {Root, Nav, NavLink } 
     from "./components/NavbarElements";
 import { BrowserRouter as Router, Routes, Route}
 	from 'react-router-dom';
 import Home from './pages/home';
 import Play from './pages/play';
 import Resume from './pages/resume';
+import Clef from './pages/clef';
+import Graphics from './pages/graphics';
+import Notee from './pages/notee'; 
+import FridgIt from './pages/fridgit';
+
 import { useState } from 'react';
 
 function App() {
@@ -43,6 +48,10 @@ return (
 		<Route exact path='/' element={<Home />}  />
 		<Route path='/play' element={<Play/>} />
 		<Route path='/resume' element={<Resume/>} />
+    <Route path='/notee' element={<Notee/>} />
+    <Route path='/fridg-it' element={<FridgIt/>} />
+    <Route path='/graphics' element={<Graphics/>} />
+    <Route path='/clef' element={<Clef/>} />
 	</Routes>
 	</Router></Root>
 );
