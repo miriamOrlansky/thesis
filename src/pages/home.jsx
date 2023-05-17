@@ -5,7 +5,7 @@ import StudyCase from '../components/StudyCase';
 import FridgIt from '../Images/fridg-it.svg';
 import Clef from '../Images/clef.svg';
 import GraphicDesign from '../Images/graphic-design.svg';
-import LunchCrunch from '../Images/lunch-crunch.svg';
+import Notee from '../Images/notee.svg';
 
 export default function Home(){
 
@@ -51,10 +51,10 @@ export default function Home(){
             </Picture>
             </SectionOne>
             <SectionTwo>
-            <CaseStudy title="Fridg-It" source={FridgIt}/>
-            <StudyCase title="Clef" source={Clef}/>
-            <CaseStudy title="Lunch Crunch" source={LunchCrunch}/>
-            <StudyCase title="Graphic Design Work" source={GraphicDesign}/></SectionTwo>
+            <CaseStudy title="Fridg-It" source={FridgIt} link='/fridg-it'/>
+            <StudyCase title="Clef" source={Clef} link='/clef'/>
+            <CaseStudy title="Notee" source={Notee} link='/notee'/>
+            <StudyCase title="Graphic Design Work" source={GraphicDesign} link='/graphics'/></SectionTwo>
         </Root>
     )
 

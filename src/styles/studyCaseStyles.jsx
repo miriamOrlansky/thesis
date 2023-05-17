@@ -2,7 +2,10 @@ import styled from "styled-components";
 import {colors} from "../styles/colors";
 
 export const Root= styled.div`
+a{
 display: flex; 
+text-decoration: none;
+color: ${colors.black};
 justify-content: flex-end;  
 gap: 10px; 
 align-items: center;
@@ -11,7 +14,7 @@ margin-bottom: 10%;
     padding: 0.3rem calc((100vw - 85vw) / 2);
     gap: 25px;
   }
-
+}
 `;
 
 export const Picture = styled.div`

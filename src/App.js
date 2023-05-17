@@ -10,6 +10,7 @@ import Clef from './pages/clef';
 import Graphics from './pages/graphics';
 import Notee from './pages/notee'; 
 import FridgIt from './pages/fridgit';
+import Footer from './components/Footer';
 
 import { useState } from 'react';
 
@@ -53,7 +54,9 @@ return (
     <Route path='/graphics' element={<Graphics/>} />
     <Route path='/clef' element={<Clef/>} />
 	</Routes>
-	</Router></Root>
+	</Router>
+  <Footer/>
+  </Root>
 );
 }
 
